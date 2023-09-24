@@ -1,0 +1,115 @@
+
+
+
+body {
+    background-color: #c3d2db;
+    font-family: 'Roboto', sans-serif;
+}
+.navigation a {
+    display: block;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#logo_nav {
+
+    max-width: 25%;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    background: #f5f5f5;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    font-weight: bold;
+
+}
+
+main {
+
+    background: whitesmoke;
+    margin: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+
+
+
+}
+
+footer{
+    
+
+        background: #fff;
+        margin: 1.5rem;
+        padding: 1rem;
+        border-radius: 1.2rem;
+        text-align: center;
+    
+    
+    
+    
+}
+
+.nav-list {
+
+    background: whitesmoke;
+    margin: 0;
+    padding: 1rem 0;
+
+
+}
+
+.nav-list li {
+
+    display: inline-block;
+
+}
+
+.nav-item {
+
+    list-style: none;
+    margin-right: 5rem;
+}
+
+.nav-item li a {
+
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav-item li a:hover {
+
+    color: rgb(87, 210, 30);
+
+}
+
+.nav-item a {
+
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.colors th {
+
+
+    width: 25%;
+    height: 3em;
+
+
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+@media only screen and (min-width: 700px) {
+    html {
+        background-color: #1c3334;
+        font-size: 1.15rem;
+    }
+
+    .content {
+        border: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
