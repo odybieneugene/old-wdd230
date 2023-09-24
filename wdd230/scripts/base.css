@@ -1,0 +1,24 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+html {
+    background-color: rgb(195, 210, 219);
+    background-size: 30%;
+    font-family: verdana, sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.card {
+    display: grid;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
