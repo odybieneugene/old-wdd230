@@ -1,24 +1,54 @@
 html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
-
-html {
-    background-color: rgb(195, 210, 219);
+    background-color: #c3d2db;
     background-size: 30%;
-    font-family: verdana, sans-serif;
+    font-family: 'verdana', sans-serif;
     color: white;
-}
-
-body {
-    margin: 0;
-}
-
-.card {
-    display: grid;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-}
+  }
+  
+  main {
+      background-color: rgb(88, 241, 241);
+      max-width: 760px;
+      margin: 1.25rem auto;
+      padding: 1rem;
+      font-size: 18px;
+      line-height: 1.5;
+     
+  
+    }
+    
+    header,
+    footer {
+      background-color: #bccaca;
+      max-width: 760px;
+      margin: 1.25rem auto;
+      padding: 1rem;
+      color: #fff;
+      text-align: center;
+    }
+    
+    img{
+        width: 200px;
+        margin: 10px;
+        border: 1px solid #fff;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+    
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+    }
+    ul li {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+    }
+    
+    p {
+      font-family: 'Roboto', sans-serif;
+      
+    }
+    
