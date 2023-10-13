@@ -2,9 +2,16 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Ody Bien-Eugene- WDD 230 - Web Frontend Development </title>
+    <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto&display=swap"
+    rel="stylesheet">
+    
     <link rel="stylesheet" href="scripts/base.css">
 </head>
 
@@ -13,6 +20,7 @@
         <h1>Ody Bien-Eugene OBE</h1>
         <img src="\images\OdyID.jpg" alt="Ody" width="600" height="700">
     </header>
+    <main>
     <nav>
         <ul><a href="#">Home</a> </ul>
         <ul><a href="chamber/siteplan.html">Site Plan</a></ul>
@@ -20,26 +28,19 @@
         <ul><a href="https://www.byui.edu/target=">BYU-Idaho </a></ul>
         <ul><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></ul>
     </nav>
-    <main>
+</main>
         <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="lesson2/design-principles.html">First activity: Design principles </a></li>
-                <li><a href="#">2nd activity</a></li>
-                <li><a href="#">3rd activity</a></li>
-            </ul>
-        </section>
-        <section class="card">
+        <ul>
+             <li><a href="lesson2/design-principles.html">First activity: Design principles </a></li>
+             <li><a href="#">2nd activity</a></li>
+             <li><a href="#">3rd activity</a></li>
+        </ul>
             <h3>Information</h3>
             Wheather: 27°C ; 099 Pages views.
-        </section>
     </main>
-    <footer>
-        <p> &copy; 2023, Ody Bien-Eugene, P-au-P, Haiti </p>
-        <p id="lastModified"></p>
-    </footer>
-    <script type="text/javascript" src="styles/getdates.js"></script>
-</body>
-
+    <footer>&copf; 2023 | Ody Bien-Eugene | Haiti | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <br> Last Update: <span id="date"></span>
+      </footer>
+      <script type="text/javascript" src="/JavaScript/lastdate.js"></script>
+    </body>
 </html>
