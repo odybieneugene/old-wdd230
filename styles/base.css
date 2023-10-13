@@ -28,6 +28,7 @@ html {
     
     img{
         width: 200px;
+        height: 300;
         margin: 10px;
         border: 1px solid #fff;
         max-width: 90%;
