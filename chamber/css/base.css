@@ -26,15 +26,15 @@ html {
       text-align: center;
     }
     
-    img{
-        width: 200px;
-        height: 250px;
+    #logo_nav{
+      display:flex;
+        width: 100px;
+        height: 100px;
         margin: 10px;
-        border: 1px solid #fff;
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
-        float: right;
+      
     
     }
     
@@ -52,8 +52,8 @@ html {
       font-family: 'Roboto', sans-serif;
       text-align: center;
     }
-    li {
-      display: block;
-      text-decoration: none;
-      text-align: center;
+
+    nav-list{
+      display: inline-block;
+      
     }
