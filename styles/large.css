@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&family=verdana);
+
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff,rgb(88, 241, 241));
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family:  'verdana', sans-serif;
+}
+
+:root {
+    --heading-font: "Roboto";
+    --paragraph-font: "verdana";
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'verdana', sans-serif;
+}
+
+header {
+    background-color: #05668d;
+    padding: 1rem;
+
+}
+
+header img {
+    position: relative;
+    text-align: left;
+    border-radius: 5px;
+}
+
+header h1 {
+    display: inline;
+    color: white;
+    padding-left: 1.5rem;
+    padding-top: 1.6rem;
+    position: absolute;
+    max-width:auto;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+.content {
+    text-align: center;
+    display: grid;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card h4 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    background-color: #05668d;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.list {
+    list-style-type: none;
+    text-align: left;
+}
+
+/* imbedded map */
+iframe {
+    width: 100%;
+    height: 225px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: 0;
+}
+
+footer {
+    background-color: #05668d;
+    color:white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    left: 88%;
+    top: 9%;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    font-family:  'verdana', sans-serif;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation li a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+img {}

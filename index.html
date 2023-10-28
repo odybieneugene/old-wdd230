@@ -11,43 +11,80 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto&display=swap"
     rel="stylesheet">
     
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="/wdd230/styles/bases.css">
+    <link rel="stylesheet" href="/wdd230/styles/large.css">
+
 </head>
 
-<body>
-    <header>
-        <h1>  <img src="images/OdyID.jpg" alt="Ody"> Ody Bien-Eugene OBE</h1>
-       
-    </header>
-    <main>
-        <div class="hero">
-            <picture>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/port-au-prince-haiti/1280x800/03-Port-au-Prince-Haiti-Temple-2264539.jpg" alt="Port-au-Prince Haiti Temple - 2019">
-            </picture>
-            <div class="herolabel">
-                <p>Port-au-Prince Haiti Temple</p>
+    <body>
+        <header>
+            <img src="/wdd230/images/OdyID.jpg" alt="my profile picture" width="150">
+            <h1>Ody Bien-Eugene</h1>
+        </header>
+        <nav>
+            <button id="mmenu"></button>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="/wdd230/chamber/siteplan.html">Site Plan</a></li>
+                <li><a href="/wdd230/chamber/chamber.html">Chamber</a></li>
+                <li><a href="https://byui.edu/" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41">Scripture</a> </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="wdd230/images/03-Port-au-Prince-Haiti-Temple-2264539.webp" media="(max-width: 400px)">
+                    <source srcset="wdd230/images/03-Port-au-Prince-Haiti-Temple-2264539.webp" media="(max-width: 960px)">
+                    <img src="/wdd230/images/03-Port-au-Prince-Haiti-Temple-2264539.webp" alt="Port-au-Prince Temple - 2019">
+                </picture>
+                <div class="herolabel">
+                    <h2>Port-au-Prince Temple</h2>
+                </div>
             </div>
-        </div>
-    <nav>
-        <ul class="nav-list">
-            <li><a href="/index.html">Home</a> </li>
-            <li><a href="lesson3/index.html">Chamber </a> </li>
-            <li><a href="https://www.byui.edu">BYU-Idaho </a> </li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a> </li>
-        </ul>
-    </nav>
-
-         <h2>WDD 230: Web Frontend Development</h2>
-             <li><a href="lesson2/design-principles.html"> 1st activity: Design principles </a></li>
-             <li><a href="/lesson3/index.html""> Chamber Of Commerce </a></li>
-             <li><a href="/lesson5/bom.html">DOm Manupilation</a></li>
-
-            <h3>Information</h3>
-            <p>27°C ; 099 Pages views.</p> 
-    </main>
-    <footer>&copf; 2023 | Ody Bien-Eugene | Haiti | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-        <br> Last Update: <span id="date"></span>
-      </footer>
+            <div class="content">
+                <h2 class="title">WDD 230: Web Frontend Development</h2>
+                <section class="card activities">
+                    <h3>Learning Activities</h3>
+                    <ul class="list">
+                        <li><a href="lesson01/media-query.html">Lesson 01</a></li>
+                        <li><a href="lesson02/design.html">Lesson 02</a></li>
+                        <li><a href="lesson02/design-principles.html">Lesson 02 - Design Principles</a></li>
+                        <li><a href="images/Exercise3-CombinatorSelector.jpg">Lesson 03 - Combinator Exercise</a></li>
+                        <li><a href="https://codepen.io/Santiago-Risso/pen/NWezYpB">Codepen Hamburger Button Activity</a>
+                        </li>
+                        <li><a href="https://codepen.io/Santiago-Risso/pen/GRPYXLG">Codepen Activity: Pseudo-Classes</a>
+                        </li>
+                        <li><a href="chamber/index.html">Lesson 04: Chamber Site</a></li>
+                        <li><a href="lesson05/bom.html">Lesson 05: BOM Top 10</a></li>
+                        <li><a href="lesson03/images/landscape.webp">Lesson 06: WebP</a></li>
+                        <li><a href="lesson07/bom.html">Lesson 07: BOM Top 10 (localstorage)</a></li>
+                    </ul>
+                </section>
+                <section class="card information">
+                    <h3>Information</h3>
+                    <h4>Number of visits: <span class="visits"></span></h4>
+                    <h4>Current temperature in Port-au-Prince is 28 degress Celsius</h4>
+                </section>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121020.50257180592!2d-72.36687467593177!3d18.57896551139394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb9dd57503eaa91%3A0x3cd5815df929aa08!2sPort-au-Prince!5e0!3m2!1sfr!2sht!4v1698469694698!5m2!1sfr!2sht"
+                    width="1" height="1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+    
+        </main>
+    
+    
+        <footer>
+            <p>&copf; 2023 | Ody Bien-Eugene | Haiti | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+            </p>
+            <p>Last updated: <span id="lastmodified"></span></p>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script src="wdd230/scripts/hamburger.js"></script>
+        <script src="scripts/scripts.js"></script> 
       <script type="text/javascript" src="/JavaScript/lastdate.js"></script>
     </body>
 </html>
