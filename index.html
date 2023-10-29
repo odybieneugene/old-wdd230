@@ -74,13 +74,21 @@
     
     
         <footer>
-            <p>&copf; 2023 | Ody Bien-Eugene | Haiti | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+            <p>&copf; 2023 | Ody Bien-Eugene | Haiti |
+                 <a href="https://www.byui.edu/online"  target="_blank">BYUI Online Learning</a>
             </p>
-            <p>Last updated: <span id="lastmodified"></span></p>
+            <p>Last Updated: <span id="lastModified"></span></p>
+            <script>
+                // Function to get and display the last modified date
+                function displayLastModifiedDate() {
+                    var lastModified = new Date(document.lastModified);
+                    var options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+                    document.getElementById('lastModified').textContent = lastModified.toLocaleString(undefined, options);
+                }
+        
+                // Call the function to display the last modified date
+                displayLastModifiedDate();
+            </script>
         </footer>
-        <script src="scripts/getdates.js"></script>
-        <script src="wdd230/scripts/hamburger.js"></script>
-        <script src="scripts/scripts.js"></script> 
-      <script type="text/javascript" src="/JavaScript/lastdate.js"></script>
     </body>
 </html>
