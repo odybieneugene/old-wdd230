@@ -192,3 +192,32 @@ footer p {
 .active::before {
     content: "📍 ";
 }
+
+/* Discoer page Styles */
+
+.discover {
+   background-color: #000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Three columns: 1 fraction for the left sidebar, 2 fractions for the main content, and 1 fraction for the right sidebar */
+    gap: 20px; /* Add a gap between columns for spacing */
+    margin: 15px;
+  }
+  
+  .left-sidebar {
+    background-color: #ccc;
+    /* Additional styles for the left sidebar */
+  }
+  
+  .main-content {
+    background-color: #fff;
+    /* Additional styles for the main content */
+  }
+  
+  .right-sidebar {
+    background-color: #ccc;
+    /* Additional styles for the right sidebar */
+  }
+  
