@@ -61,7 +61,7 @@ footer{
 
     background: whitesmoke;
     margin: 0;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 
 
 }
@@ -73,9 +73,9 @@ footer{
 }
 
 .nav-item {
-
+    
     list-style: none;
-    margin-right: 5rem;
+    margin-right: 3rem;
 }
 
 .nav-item li a {
