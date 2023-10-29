@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBE Lazy Load Demonstration</title>
+     <!-- STYLE SHEETS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/wdd230/lesson3/css/lazyload.css">
+
+    </head>
+    <body>
+        <header>
+                <h1> Lazy Load Demonstration</h1>
+        </header>
+        <main>
+            <picture><img src="https://loremflickr.com/400/600" alt="Place holder image" loading="lazy" width="400" height="600">  </picture>
+            <picture><img src="https://loremflickr.com/400/605" alt="Place holder image" loading="lazy" width="400" height="600">  </picture>
+            <picture><img src="https://loremflickr.com/400/610" alt="Place holder image" loading="lazy" width="400" height="600">  </picture>
+            <picture><img src="https://loremflickr.com/400/615" alt="Place holder image" loading="lazy" width="400" height="600">  </picture>
+            <picture><img src="https://loremflickr.com/400/620" alt="Place holder image" loading="lazy" width="400" height="600">  </picture>
+            <picture><img src="https://loremflickr.com/400/625" alt="Place holder image" loading="lazy" width="400" height="600">  </picture>   
+        </main>
+        <footer>
+            <p>&copf; 2023 | Ody Bien-Eugene | Haiti |
+                 <a href="https://www.byui.edu/online"  target="_blank">BYUI Online Learning</a>
+            </p>
+            <p>Last Updated: <span id="lastModified"></span></p>
+            <script>
+                // Function to get and display the last modified date
+                function displayLastModifiedDate() {
+                    var lastModified = new Date(document.lastModified);
+                    var options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+                    document.getElementById('lastModified').textContent = lastModified.toLocaleString(undefined, options);
+                }
+        
+                // Call the function to display the last modified date
+                displayLastModifiedDate();
+            </script>
+        </footer>
+        </footer>
+    </body>
+</html>

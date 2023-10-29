@@ -192,5 +192,3 @@ footer p {
 .active::before {
     content: "📍 ";
 }
-
-img {}
